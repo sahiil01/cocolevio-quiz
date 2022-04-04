@@ -1,0 +1,80 @@
+{
+  "questions": [
+    {
+      "questionText": "Which of the following is the Capital of India? ",
+      "options": [
+        {
+          "text": "Delhi",
+          "correct": true
+        },
+        {
+          "text": "Mumbai"
+        },
+        {
+          "text": "Kolkata"
+        },
+        {
+          "text": "Pune"
+        }
+      ],
+      "explanation": "New Delhi is the capital of India."
+    },
+    {
+      "questionText": "Which of the following is a Movie?",
+      "options": [
+        {
+          "text": "Friends"
+        },
+        {
+          "text": "The Office"
+        },
+        {
+          "text": "Brooklyn 99"
+        },
+        {
+          "text": "The Spiderman",
+          "correct": true
+        }
+      ],
+      "explanation": "All the other options are American sitcoms."
+    },
+    {
+      "questionText": "How can we find the speed of a moving object?",
+      "options": [
+        {
+          "text": "Speed = Force X Mass."
+        },
+        {
+          "text": "Speed = Distance / Time.",
+          "correct": true
+        },
+        {
+          "text": "Speed = Miles / Gallon."
+        },
+        {
+          "text": "Speed = Velocity + Accelaration"
+        }
+      ],
+      "explanation": "Speed of a moving object is found by dividing the distance travelled with time taken."
+    },
+    {
+      "questionText": "who is regarded as the greatest urdu language poet?",
+      "options": [
+        {
+          "text": "Faiz ahmad faiz"
+        },
+        {
+          "text": "Mirza ghalib",
+          "correct": true
+        },
+        {
+          "text": "Jaun elia!"
+        },
+        {
+          "text": "Gulzar"
+        }
+      ],
+      "explanation": "Mirza Ghalib is regarded as the greatest poet of urdu language."
+    }
+  ]
+}

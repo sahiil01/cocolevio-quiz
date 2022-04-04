@@ -1,0 +1,27 @@
+<div class="container bg-light py-5">
+  <h1 class="display-5 fw-bold">Welcome to cocolevio quiz app</h1>
+  <p class="col-md-10 fs-4">
+    The quiz contains four questions and each question has only one correct
+    answer.
+  </p>
+  <p class="col-md-10 fs-4">
+    The Result will be showcased at the end of the quiz with correct answers.
+  </p>
+  <div class="name cl-md-2 my-3 fs-5 fw-bold">
+    <label for="">Name</label>
+    <input
+      #name
+      type="text"
+      placeholder="Enter your name here."
+      class="form-control"
+    />
+  </div>
+  <button
+    class="btn btn-lg"
+    style="color: white; background-color: #5dce90"
+    routerLink="/quiz"
+    (click)="startQuiz()"
+  >
+    Start Quiz
+  </button>
+</div>
