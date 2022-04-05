@@ -8,7 +8,7 @@ import { JsonService } from '../service/json.service';
 })
 export class ResultComponent implements OnInit {
   public name: string = '';
-  public scored: number = 0;
+  public scored: string = '';
   public questionList: any = [];
   public answerList: any = [];
   public currentQuestion: number = 0;
@@ -18,7 +18,7 @@ export class ResultComponent implements OnInit {
     this.name = localStorage.getItem('name')!;
     this.getAllQuestions();
     this.getAllAnswers();
-    this.score();
+    this.scored = localStorage.getItem('score')!;
   }
   getAllQuestions() {
     this.jsonService.getQuestionJson().subscribe((res) => {
@@ -38,22 +38,7 @@ export class ResultComponent implements OnInit {
     // console.warn('hello');
     // console.warn(this.answerList[0]);
   }
-  score() {
-    for (var option of this.questionList[this.currentQuestion]?.options) {
-      console.warn('current question is', this.currentQuestion);
-      if (option.text == this.answerList[this.currentQuestion]) {
-        this.scored += 25;
-        console.warn('the score is' + this.scored);
-      }
-      this.currentQuestion++;
-    }
 
-    // for (let i = 0; i < 4; i++) {
-    //   if (this.answerList[i] == this.questionList[i].options.text)
-    //     this.scored += 25;
-
-    // }
-  }
   nextQuestion() {
     this.currentQuestion++;
   }

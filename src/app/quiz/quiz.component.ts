@@ -10,7 +10,8 @@ import { JsonService } from '../service/json.service';
 export class QuizComponent implements OnInit {
   public name: string = '';
   public questionList: any = [];
-  public answers = { 0: null, 1: null, 2: null, 3: null };
+  // public answers = { 0: null, 1: null, 2: null, 3: null };
+  public score: number = 0;
 
   public currentQuestion: number = 0;
   constructor(private jsonService: JsonService) {}
@@ -36,5 +37,10 @@ export class QuizComponent implements OnInit {
     console.warn(currentQuesNo);
     console.warn(option);
     localStorage.setItem(currentQuesNo.toString(), option.text);
+
+    if (option.correct) {
+      this.score += 25;
+    }
+    localStorage.setItem('score', this.score.toString());
   }
 }
